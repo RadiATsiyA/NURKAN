@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-text span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contacts a img {
+    width: 48px;
+    height: 48px;
+}
+
+.phone-number {
+    font-size: 14px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.phone-number .phone_img {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.phone-number a {
+    color: white;
+    text-decoration: none;
+}
+
+.callback-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
