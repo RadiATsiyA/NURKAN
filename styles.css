@@ -6,7 +6,9 @@
   color: white;
 }
 
-/*#0e58ae button color*/
+/*#0e58ae dark blue
+  0e58ae - light blue
+*/
 
 .container {
   display: flex;
@@ -48,7 +50,7 @@ header {
 .application_btn {
   padding: 9px 18px; /* Пример внутренних отступов */
   border: none; /* Убираем границу */
-  background-color: #007bff; /* Пример цвета фона */
+  background-color: #0e58ae; /* Пример цвета фона */
   color: white; /* Цвет текста */
   font-size: 16px; /* Размер шрифта */
   border-radius: 10px; /* Радиус скругления углов */
@@ -113,7 +115,7 @@ h1 {
 .main_btn {
   padding: 11px 20px; /* Пример внутренних отступов */
   border: none; /* Убираем границу */
-  background-color: #007bff; /* Пример цвета фона */
+  background-color: #0e58ae; /* Пример цвета фона */
   color: white; /* Цвет текста */
   font-size: 18px; /* Размер шрифта */
   border-radius: 10px; /* Радиус скругления углов */
@@ -134,7 +136,7 @@ h1 {
 .services {
   background-color: #121519;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 400px;
 }
 
 .services_wrapper {
@@ -166,7 +168,7 @@ h1 {
 .circle {
   width: 18px !important;
   height: 14px !important;
-  background-color: #007bff;
+  background-color: #0e58ae;
   border-radius: 50%;
   margin-right: 12px;
 }
@@ -174,7 +176,7 @@ h1 {
 .more_btn {
   padding: 11px 20px; /* Пример внутренних отступов */
   border: none; /* Убираем границу */
-  background-color: #007bff; /* Пример цвета фона */
+  background-color: #0e58ae; /* Пример цвета фона */
   color: white; /* Цвет текста */
   font-size: 18px; /* Размер шрифта */
   border-radius: 10px; /* Радиус скругления углов */
@@ -290,4 +292,139 @@ h1 {
   margin-top: 16px;
   align-items: center;
   text-align: center;
+}
+
+
+.advantages_image {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+
+.advantage_image {
+  max-width: 590px;
+  border-radius: 20px;
+}
+
+.welcome {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.welcome_wrapper_left {
+  max-width: 470px;
+  margin: auto 0;
+  margin-right: 100px;
+}
+
+.welcome_title {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.welcome_descr {
+  font-size: 19px;
+  color: rgb(177, 174, 174);
+  margin-top: 22px;
+}
+
+.about_us_btn {
+  padding: 8px 16px; /* Пример внутренних отступов */
+  border: none; /* Убираем границу */
+  background-color: #0e58ae; /* Пример цвета фона */
+  color: white; /* Цвет текста */
+  font-size: 19px; /* Размер шрифта */
+  border-radius: 10px; /* Радиус скругления углов */
+  cursor: pointer; /* Курсор при наведении */
+  margin-top: 39px;
+}
+
+.welcome_img {
+  max-width: 450px;
+  border-radius: 22px;
+}
+
+/*FORM SECTION ***********************/
+
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: -250px 0; /* Adjust the margin as needed */
+}
+
+.contact-form {
+  background-color: #0e58ae;
+  padding: 100px 150px 80px;
+  border-radius: 30px;
+  width: 800px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form_title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input_contact_form {
+  width: 340px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.input_contact_form::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.submit {
+  padding: 13px 28px;
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  color: #0e58ae;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #e6e6e6;
+}
+
+.label_input_form {
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+.txtarea {
+  width: 740px;
 }
