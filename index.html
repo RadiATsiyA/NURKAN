@@ -211,23 +211,24 @@
     <div class="contact-form">
 
         <h2 class="form_title">Свяжитесь с нами<br>сегодня</h2>
-        <form action="#">
+
+        <form id="contact_form" action="#">
 
             <div class="form-group">
                 <div class="input_wrapper">
-                  <label class="label_input_form" for="input_contact_form">Имя</label>
-                  <input class="input_contact_form" type="text" name="name" placeholder="Ваше имя">
+                    <label class="label_input_form" for="input_name">Имя <span class="req">*</span></label>
+                    <input id="input_name" class="input_contact_form" type="text" name="name" placeholder="Ваше имя" required>
                 </div>
                 <div class="input_wrapper">
-                  <label class="label_input_form" for="input_contact_form">Номер телефона</label>
-                  <input class="input_contact_form" type="text" name="name" placeholder="+7(989)-45-97-68">
+                    <label class="label_input_form" for="input_contact_form">Номер телефона <span class="req">*</span></label>
+                    <input id="input_contact_form" class="input_contact_form" type="text" name="phone" placeholder="+7(999)-123-45-67" required>
                 </div>
             </div>
             <div class="form-group">
-              <div class="input_wrapper">
-                <label class="label_input_form" for="input_contact_form">Задать вопрос</label>
-              <textarea name="message" class="input_contact_form txtarea" placeholder="Сколько стоит пошив тюли?"></textarea>
-              </div>
+                <div class="input_wrapper">
+                    <label class="label_input_form" for="input_message">Задать вопрос</label>
+                    <textarea id="input_message" name="message" class="input_contact_form txtarea" placeholder="Сколько стоит пошив тюли?"></textarea>
+                </div>
             </div>
             <button class="submit" type="submit">Свяжитесь с нами</button>
 
@@ -235,7 +236,84 @@
 
     </div>
 
+</div>
+
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="block_wrapper">
+
+      <h5 class="footer_title">NURKAN</h5>
+      <div class="footer_descr">Стремление к качеству и совершенству.</div>
+
+      <div class="social_media_wrapper">
+
+        <a href=""><div class="social_media">
+          <img src="/static/icons/whatsapp.png" alt="" class="social_media_icon">
+        </div></a>
+
+        <a href=""><div class="social_media">
+          <img src="/static/icons/telegram.png" alt="" class="social_media_icon">
+        </div></a>
+
+        <a href=""><div class="social_media">
+          <img src="/static/icons/instagram.png" alt="" class="social_media_icon">
+        </div></a>
+
+        <a style="text-decoration: none;" target="_blank" href="https://optlist.ru/company/nurkan_tekstil"><div class="social_media">
+          <div class="optlist social_media_icon">Optlist</div>
+        </div></a>
+
+      </div>
+
+      <div class="rights ">© Все права защищены. ТекстильПро</div>
+
+    </div>
+
+    <div class="block_wrapper mid">
+
+      <a class="footer_link" href=""><div class="options_footer">Каталог цен</div></a>
+      <a class="footer_link" href=""><div class="options_footer">О нас</div></a>
+      <a class="footer_link" href=""><div class="options_footer">Что то еще</div></a>
+      <a class="footer_link" href=""><div class="options_footer">Что то еще</div></a>
+
+    </div>
+
+    <div class="block_wrapper end">
+
+      <a class="footer_link" href=""><div class="options_footer">Каталог цен</div></a>
+      <a class="footer_link" href=""><div class="options_footer">О нас</div></a>
+      <a class="footer_link" href=""><div class="options_footer">Что то еще</div></a>
+      <a class="footer_link" href=""><div class="options_footer">Что то еще</div></a>
+
+    </div>
+
+
   </div>
+
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+
+
+<script>
+    $(document).ready(function() {
+        $("#input_contact_form").inputmask("+7(999)-999-99-99");
+
+        $("#contact_form").on("submit", function(event) {
+            var phoneInput = $("#input_contact_form");
+            if (!phoneInput.inputmask("isComplete")) {
+                alert("Пожалуйста, введите полный номер телефона.");
+                event.preventDefault(); // Предотвращает отправку формы
+            }
+        });
+    });
+</script>
   
 </body>
 </html>

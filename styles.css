@@ -136,7 +136,7 @@ h1 {
 .services {
   background-color: #121519;
   padding-top: 100px;
-  padding-bottom: 400px;
+  padding-bottom: 500px;
 }
 
 .services_wrapper {
@@ -352,7 +352,8 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: -250px 0; /* Adjust the margin as needed */
+  background-color: #121519;
+  margin: -350px 0; /* Adjust the margin as needed */
 }
 
 .contact-form {
@@ -427,4 +428,81 @@ h1 {
 
 .txtarea {
   width: 740px;
+}
+
+span.req {
+  color: red;
+}
+
+/*FOOOOTER___________*/
+
+footer.footer {
+  background-color: #111c28;
+  padding-top: 600px;
+  padding-bottom: 50px;
+}
+
+h5.footer_title {
+  font-size: 24px; /* Пример размера шрифта для логотипа */
+  font-weight: bold; /* Пример насыщенности шрифта для логотипа */
+  text-decoration: none;
+  color: white; /* Цвет текста для логотипа */
+  display: flex;
+  align-items: center; /* Выравнивание логотипа по вертикали */
+}
+
+.footer_descr {
+  margin-top: 15px;
+  font-size: 15px;
+  color: rgb(177, 174, 174);
+}
+
+
+
+.social_media_wrapper {
+  display: flex;
+}
+
+.social_media_icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.rights {
+  margin-top: 15px;
+  font-size: 15px;
+  color: rgb(177, 174, 174);
+}
+
+
+.options_footer {
+  font-size: 19px;
+  
+  text-decoration: none;
+}
+
+.footer_link {text-decoration: none ;}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 250px;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 250px;
+}
+
+.optlist {
+  padding-top: 9px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  
 }
