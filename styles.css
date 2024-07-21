@@ -47,6 +47,10 @@ header {
   align-items: center; /* Выравнивание логотипа по вертикали */
 }
 
+.contacts {
+  padding-right: 180px;
+}
+
 .application_btn {
   padding: 9px 18px; /* Пример внутренних отступов */
   border: none; /* Убираем границу */
@@ -55,15 +59,21 @@ header {
   font-size: 16px; /* Размер шрифта */
   border-radius: 10px; /* Радиус скругления углов */
   cursor: pointer; /* Курсор при наведении */
-  margin-left: auto;  
-  margin-top: 18px;
+  
 }
 
 .application_btn:hover {
   background-color: #0056b3; /* Изменение цвета фона при наведении */
 }
 
-
+.menu_toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
 
 /*MAIN SECTION **************************************/
 
@@ -85,7 +95,7 @@ header {
 h1 {
   margin-top: 70px;
   margin-right: 30px;
-  font-size: 65px;
+  font-size: 60px;
   font-family: 'Montserrat';
   font-weight: 500;
 }
@@ -126,8 +136,7 @@ h1 {
 
 .main_btn:hover {
   background-color: #0056b3; /* Изменение цвета фона при наведении */
-}
-
+} 
 
 
 /*NEW SECTION******************************/
@@ -203,7 +212,7 @@ h1 {
   margin-left: 150px;
 }
 
-.service_types_2 {
+.service_types._2 {
   margin-left: 27px;
   margin-top: 34px;
 }
@@ -506,3 +515,53 @@ h5.footer_title {
   font-weight: 700;
   
 }
+
+
+
+/**** Media Queries for Responsive Design */
+@media screen and (max-width: 767px) {
+  /*phone*/
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo_link {
+    margin-bottom: 10px;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu_option {
+    padding: 10px;
+    border-top: 1px solid #444;
+    width: 100%;
+    text-align: center;
+  }
+
+  .application_btn {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu_toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navigation.active {
+    display: flex;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*Tablet*/
+}
+
