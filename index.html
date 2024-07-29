@@ -12,18 +12,19 @@
 <body>
   <header>
     <div class="container"> 
-        <a href="#" class="logo_link"><div class="logo">NURKAN</div></a>
-        <nav class="navigation">
-            <a class="menu_option" href="#">Главная</a>
-            <a class="menu_option" href="#">Услуги</a>
-            <a class="menu_option" href="#">Преимущества</a>
-            <a class="menu_option contacts" href="#">Контакты</a>
-            <button class="application_btn">Оставить заявку</button>
-        </nav>
-        
-        <button class="menu_toggle">☰</button>
+      <a href="#" class="logo_link"><div class="logo">NURKAN</div></a>
+      <nav class="navigation">
+        <a class="menu_option" href="#">Главная</a>
+        <a class="menu_option" href="#">Услуги</a>
+        <a class="menu_option" href="#">Преимущества</a>
+        <a class="menu_option contacts" href="#">Контакты</a>
+        <button class="application_btn">Оставить заявку</button>
+      </nav>
+      
+      <button class="menu_toggle">☰</button>
     </div>
   </header>
+
 
   <section class="main">
 
@@ -313,10 +314,19 @@
 
 
 <script>
-  document.querySelector('.menu_toggle').addEventListener('click', function() {
-      document.querySelector('.navigation').classList.toggle('active');
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu_toggle');
+    const navigation = document.querySelector('.navigation');
+    const body = document.body;
+
+    menuToggle.addEventListener('click', function() {
+      navigation.classList.toggle('active');
+      body.classList.toggle('menu-active');
+    });
   });
 </script>
+
+
   
 </body>
 </html>

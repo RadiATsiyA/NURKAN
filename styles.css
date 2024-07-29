@@ -12,13 +12,13 @@
 
 .container {
   display: flex;
-  width: 100%; /* Используйте 100% для адаптивности или конкретное значение, если это необходимо */
-  max-width: 1200px; /* Ограничение максимальной ширины контейнера */
-  margin: 0 auto; /* Центрирование контейнера по горизонтали */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-  padding: 10px 0; /* Пример внутренних отступов для header */
+  padding: 10px 0;
   background-color: #111c28;
 }
 
@@ -29,22 +29,22 @@ header {
 
 .menu_option {
   text-decoration: none;
-  color: white; /* Цвет текста для ссылок */
-  padding: 10px 15px; /* Пример внутренних отступов для ссылок */
+  color: white;
+  padding: 10px 15px;
 }
 
 .logo {
-  font-size: 24px; /* Пример размера шрифта для логотипа */
-  font-weight: bold; /* Пример насыщенности шрифта для логотипа */
+  font-size: 24px;
+  font-weight: bold;
   margin-top: 18px;
 }
 
 .logo_link {
-  flex-grow: 0.4; /* Равномерное распределение доступного пространства */
+  flex-grow: 0.4;
   text-decoration: none;
-  color: white; /* Цвет текста для логотипа */
+  color: white;
   display: flex;
-  align-items: center; /* Выравнивание логотипа по вертикали */
+  align-items: center;
 }
 
 .contacts {
@@ -52,18 +52,17 @@ header {
 }
 
 .application_btn {
-  padding: 9px 18px; /* Пример внутренних отступов */
-  border: none; /* Убираем границу */
-  background-color: #0e58ae; /* Пример цвета фона */
-  color: white; /* Цвет текста */
-  font-size: 16px; /* Размер шрифта */
-  border-radius: 10px; /* Радиус скругления углов */
-  cursor: pointer; /* Курсор при наведении */
-  
+  padding: 9px 18px;
+  border: none;
+  background-color: #0e58ae;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .application_btn:hover {
-  background-color: #0056b3; /* Изменение цвета фона при наведении */
+  background-color: #0056b3;
 }
 
 .menu_toggle {
@@ -73,8 +72,8 @@ header {
   font-size: 24px;
   color: white;
   cursor: pointer;
+  margin-right: 5%;
 }
-
 /*MAIN SECTION **************************************/
 
 .main {
@@ -520,27 +519,37 @@ h5.footer_title {
 
 /**** Media Queries for Responsive Design */
 @media screen and (max-width: 767px) {
-  /*phone*/
   .container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
   .logo_link {
     margin-bottom: 10px;
+    margin-left: 5%;
   }
 
   .navigation {
     display: none;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
   }
 
   .menu_option {
-    padding: 10px;
-    border-top: 1px solid #444;
+    padding: 20px;
     width: 100%;
     text-align: center;
+    color: white;
+    font-size: 24px;
   }
 
   .application_btn {
@@ -557,7 +566,12 @@ h5.footer_title {
   .navigation.active {
     display: flex;
   }
+  
+  body.menu-active {
+    overflow: hidden;
+  }
 }
+
 
 
 
